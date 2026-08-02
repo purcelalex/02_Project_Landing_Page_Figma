@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1000 1520" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Canvas / page background -->
+  <rect x="0" y="0" width="1000" height="1520" fill="#FBF9F4"/>
+
+  <!-- ===================== NAV ===================== -->
+  <text x="48" y="52" font-size="24" font-weight="700" fill="#1F6F6B">Clarity</text>
+  <text x="600" y="50" font-size="15" fill="#6B7280">Services</text>
+  <text x="688" y="50" font-size="15" fill="#6B7280">About</text>
+  <text x="756" y="50" font-size="15" fill="#6B7280">Contact</text>
+  <rect x="828" y="26" width="124" height="40" rx="10" fill="#F2A65A"/>
+  <text x="890" y="52" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Book a call</text>
+  <line x1="48" y1="88" x2="952" y2="88" stroke="#ECE7DD" stroke-width="1"/>
+
+  <!-- ===================== HERO ===================== -->
+  <text x="48" y="168" font-size="13" font-weight="700" letter-spacing="2" fill="#1F6F6B">LIFE &amp; CAREER COACHING</text>
+  <text x="46" y="228" font-size="46" font-weight="700" fill="#2A2A2A">Find clarity.</text>
+  <text x="46" y="284" font-size="46" font-weight="700" fill="#2A2A2A">Move forward with</text>
+  <text x="46" y="340" font-size="46" font-weight="700" fill="#2A2A2A">confidence.</text>
+  <text x="48" y="392" font-size="17" fill="#6B7280">One-on-one coaching to help you get unstuck, set</text>
+  <text x="48" y="418" font-size="17" fill="#6B7280">real goals, and actually reach them.</text>
+  <rect x="48" y="452" width="190" height="54" rx="12" fill="#1F6F6B"/>
+  <text x="143" y="486" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Book a free call</text>
+  <text x="266" y="486" font-size="16" font-weight="600" fill="#1F6F6B">See services  &#8594;</text>
+
+  <!-- Hero image placeholder -->
+  <rect x="556" y="150" width="396" height="360" rx="18" fill="#E3EFEE"/>
+  <circle cx="754" cy="300" r="82" fill="#CFE4E1"/>
+  <rect x="672" y="392" width="164" height="70" rx="10" fill="#D9EAE7"/>
+  <text x="754" y="500" font-size="13" fill="#9AB4B0" text-anchor="middle">[ coach photo ]</text>
+
+  <!-- ===================== SERVICES ===================== -->
+  <text x="500" y="612" font-size="30" font-weight="700" fill="#2A2A2A" text-anchor="middle">How I can help</text>
+
+  <!-- Card 1 -->
+  <rect x="48" y="662" width="280" height="210" rx="14" fill="#FFFFFF" stroke="#ECE7DD" stroke-width="1"/>
+  <circle cx="82" cy="704" r="18" fill="#1F6F6B"/>
+  <text x="72" y="762" font-size="19" font-weight="700" fill="#2A2A2A">Career Coaching</text>
+  <text x="72" y="794" font-size="14" fill="#6B7280">Get clear on your next move</text>
+  <text x="72" y="816" font-size="14" fill="#6B7280">and build a plan to get there.</text>
+
+  <!-- Card 2 -->
+  <rect x="360" y="662" width="280" height="210" rx="14" fill="#FFFFFF" stroke="#ECE7DD" stroke-width="1"/>
+  <circle cx="394" cy="704" r="18" fill="#1F6F6B"/>
+  <text x="384" y="762" font-size="19" font-weight="700" fill="#2A2A2A">Life Coaching</text>
+  <text x="384" y="794" font-size="14" fill="#6B7280">Find balance and direction</text>
+  <text x="384" y="816" font-size="14" fill="#6B7280">when everything feels stuck.</text>
+
+  <!-- Card 3 -->
+  <rect x="672" y="662" width="280" height="210" rx="14" fill="#FFFFFF" stroke="#ECE7DD" stroke-width="1"/>
+  <circle cx="706" cy="704" r="18" fill="#1F6F6B"/>
+  <text x="696" y="762" font-size="19" font-weight="700" fill="#2A2A2A">Confidence Coaching</text>
+  <text x="696" y="794" font-size="14" fill="#6B7280">Quiet the self-doubt and</text>
+  <text x="696" y="816" font-size="14" fill="#6B7280">show up as your best self.</text>
+
+  <!-- ===================== TESTIMONIAL ===================== -->
+  <text x="500" y="978" font-size="60" font-weight="700" fill="#F2A65A" text-anchor="middle">&#8220;</text>
+  <text x="500" y="1024" font-size="22" font-style="italic" fill="#2A2A2A" text-anchor="middle">Working with Clarity changed how I see my career.</text>
+  <text x="500" y="1058" font-size="22" font-style="italic" fill="#2A2A2A" text-anchor="middle">I finally feel in control of where I'm going.</text>
+  <text x="500" y="1102" font-size="15" font-weight="600" fill="#6B7280" text-anchor="middle">— Sarah M., Marketing Lead</text>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <rect x="48" y="1170" width="904" height="190" rx="18" fill="#1F6F6B"/>
+  <text x="500" y="1244" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle">Ready to get started?</text>
+  <text x="500" y="1282" font-size="16" fill="#CDE3E0" text-anchor="middle">Book a free 20-minute call. No pressure, no commitment.</text>
+  <rect x="410" y="1300" width="180" height="50" rx="12" fill="#F2A65A"/>
+  <text x="500" y="1331" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Book a free call</text>
+
+  <!-- ===================== FOOTER ===================== -->
+  <line x1="48" y1="1420" x2="952" y2="1420" stroke="#ECE7DD" stroke-width="1"/>
+  <text x="48" y="1466" font-size="14" fill="#9AA0A6">© 2026 Clarity Coaching</text>
+  <text x="952" y="1466" font-size="14" fill="#9AA0A6" text-anchor="end">Privacy  ·  Terms  ·  Contact</text>
+</svg>

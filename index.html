@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clarity Coaching — Find clarity. Move forward with confidence.</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">Clarity</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Book a call</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <div class="eyebrow">Life &amp; Career Coaching</div>
+        <h1>Find clarity. Move forward with confidence.</h1>
+        <p>One-on-one coaching to help you get unstuck, set real goals, and actually reach them.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Book a free call</a>
+          <a href="#services" class="btn-link">See services &rarr;</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="alain-delon.png" alt="Coach portrait" class="coach-photo">
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2>How I can help</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Career Coaching</h3>
+          <p>Get clear on your next move and build a plan to get there.</p>
+        </div>
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Life Coaching</h3>
+          <p>Find balance and direction when everything feels stuck.</p>
+        </div>
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Confidence Coaching</h3>
+          <p>Quiet the self-doubt and show up as your best self.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial" id="about">
+    <div class="quote-mark">&ldquo;</div>
+    <p>Working with Clarity changed how I see my career. I finally feel in control of where I'm going.</p>
+    <div class="author">— Sarah M., Marketing Lead</div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Book your free call</h2>
+        <p class="contact-sub">Send a message and I'll get back to you within a day.</p>
+
+        <form id="contact-form" action="mailto:purcelalex@outlook.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="What would you like to talk about?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send message</button>
+          <div id="form-status" class="form-status" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Ready to get started?</h2>
+    <p>Book a free 20-minute call. No pressure, no commitment.</p>
+    <a href="#contact" class="btn btn-primary">Book a free call</a>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Clarity Coaching</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a> ·
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
