@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — PURCELALEX</title>
+<title>PURCELALEX — Business Consulting, Coaching & Analytics</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,15 +24,53 @@
     </nav>
   </header>
 
-  <section class="page-hero">
+  <section class="hero">
     <div class="container">
-      <div class="eyebrow">Contact</div>
-      <h1>Get in touch</h1>
-      <p>Have a project in mind, or just want to talk through where your business is stuck? Send a message below and I'll get back to you within a day.</p>
+      <div class="hero-copy">
+        <div class="eyebrow">Business Consulting &amp; Analytics</div>
+        <h1>Grow with clarity and confidence.</h1>
+        <p>Business consulting, coaching, and analytics to help you make sharper decisions and scale with confidence.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Contact</a>
+          <a href="#services" class="btn-link">See services &rarr;</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="purcelalex.jpg" alt="Consultant portrait" class="coach-photo">
+      </div>
     </div>
   </section>
 
-  <section class="contact">
+  <section class="services" id="services">
+    <div class="container">
+      <h2>What I offer</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Business Consulting</h3>
+          <p>Get clear on strategy and build a plan that actually moves the needle.</p>
+        </div>
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Coaching</h3>
+          <p>One-on-one guidance to help you and your team perform at your best.</p>
+        </div>
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Analytics</h3>
+          <p>Turn your data into decisions you can act on with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial" id="about">
+    <div class="quote-mark">&ldquo;</div>
+    <p>Working with PURCELALEX changed how I see my business. I finally feel in control of where we're going.</p>
+    <div class="author">— Sarah M., Operations Director</div>
+  </section>
+
+  <section class="contact" id="contact">
     <div class="container">
       <div class="contact-box">
         <h2>Send me a request</h2>
@@ -56,6 +94,12 @@
         </form>
       </div>
     </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Ready to get started?</h2>
+    <p>Send me a request. Explain your requirements. I'll provide you with a proposed solution.</p>
+    <a href="#contact" class="btn btn-primary">Contact</a>
   </section>
 
   <footer>

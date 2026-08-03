@@ -43,9 +43,25 @@ nav.container{
   gap:16px;
 }
 .logo{
-  font-size:24px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  line-height:1.25;
+}
+.logo-name{
+  display:block;
+  font-size:21px;
   font-weight:700;
   color:var(--teal);
+  white-space:nowrap;
+}
+.logo-tagline{
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:0.5px;
+  color:var(--gray);
+  white-space:nowrap;
 }
 .nav-links{
   display:flex;
@@ -133,10 +149,10 @@ nav.container{
 }
 .hero-image{
   flex:1 1 340px;
-  max-width:380px;
+  max-width:480px;
   background:var(--teal-light);
   border-radius:18px;
-  aspect-ratio: 362 / 466;
+  aspect-ratio: 2592 / 1944;
   overflow:hidden;
 }
 .hero-image .coach-photo{
@@ -360,6 +376,34 @@ footer p, footer .footer-links{
   line-height:1.7;
   margin-bottom:16px;
 }
+.timeline{
+  list-style:none;
+  margin-top:8px;
+}
+.timeline li{
+  padding:20px 0;
+  border-bottom:1px solid var(--border);
+}
+.timeline li:last-child{
+  border-bottom:none;
+  padding-bottom:0;
+}
+.timeline-role{
+  font-size:15px;
+  font-weight:700;
+  color:var(--dark);
+}
+.timeline-meta{
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:0.3px;
+  color:var(--teal);
+  margin-top:2px;
+  margin-bottom:8px;
+}
+.timeline p{
+  margin-bottom:0;
+}
 .prose .updated{
   font-size:13px;
   color:var(--footer-gray);
@@ -372,7 +416,7 @@ footer p, footer .footer-links{
   .hero{ padding:40px 0; }
   .hero h1{ font-size:34px; }
   .hero .container{ gap:32px; }
-  .hero-image{ order:-1; width:100%; max-width:320px; margin:0 auto; }
+  .hero-image{ order:-1; width:100%; max-width:420px; margin:0 auto; }
   .cards{ grid-template-columns:1fr; }
   .services h2{ font-size:26px; }
   .testimonial p{ font-size:18px; }
