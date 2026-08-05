@@ -29,9 +29,19 @@ img{max-width:100%;display:block;}
   padding:0 24px;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ===== NAV ===== */
 header{
   border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:var(--bg);
 }
 nav.container{
   display:flex;

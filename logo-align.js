@@ -7,7 +7,7 @@ function alignLogo(){
 
   const nameWidth = name.getBoundingClientRect().width;
   const taglineWidth = tagline.getBoundingClientRect().width;
-  const gaps = name.textContent.length - 1;
+  const gaps = name.textContent.length;
   if (gaps <= 0) return;
 
   const spacing = (taglineWidth - nameWidth) / gaps;
