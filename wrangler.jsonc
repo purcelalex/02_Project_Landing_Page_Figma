@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "02-project-landing-page-figma",
+  "name": "calm-night-a767",
   "compatibility_date": "2026-08-03",
   "assets": {
     "directory": "./",
