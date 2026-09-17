@@ -1,3 +1,5 @@
 .fuse_hidden*
 .DS_Store
 Thumbs.db
+.wrangler/
+node_modules/

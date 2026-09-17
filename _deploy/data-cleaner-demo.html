@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore a synthetic before-and-after data cleaning demo, then request a free sample of up to 100 rows.">
+<title>Data Cleaner Demo — PURCELALEX</title>
+<link rel="icon" type="image/svg+xml" href="logo-icon.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="data-cleaner-demo.css">
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="PURCELALEX home">
+        <img class="logo-mark" src="logo-iqon.svg" alt="">
+        <span class="logo-copy"><span class="logo-name">PURCELALEX</span><span class="logo-tagline">data cleaning / web development</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="data-cleaner-demo.html" aria-current="page">Data Cleaner Demo</a></li>
+        <li><a href="https://formula.purcelalex.com/">Formula Generator</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="contact.html?service=quote" class="btn btn-primary">Request a quote</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="demo-hero">
+      <div class="container demo-hero-grid">
+        <div>
+          <div class="eyebrow">Data cleaning, made visible</div>
+          <h1>See messy data become decision-ready.</h1>
+          <p class="demo-lead">Explore a controlled, synthetic dataset and see how duplicates, inconsistent formats, and invalid values are identified and cleaned.</p>
+          <div class="demo-hero-actions">
+            <a class="btn btn-teal" href="#interactive-demo">Explore the demo</a>
+            <a class="btn btn-outline" href="contact.html?service=free-sample">Request a free sample</a>
+          </div>
+          <p class="sample-limit"><strong>Free sample:</strong> up to 100 rows. I will confirm a secure transfer method before you send any real data.</p>
+        </div>
+        <div class="hero-proof" aria-label="Demo overview">
+          <div class="proof-topline"><span>Controlled preview</span><span class="live-dot">Synthetic data only</span></div>
+          <div class="proof-score"><span id="hero-score">61</span><small>/100</small></div>
+          <p>Source quality score</p>
+          <div class="proof-bars" aria-hidden="true">
+            <span style="--bar:82%"></span><span style="--bar:58%"></span><span style="--bar:74%"></span><span style="--bar:45%"></span>
+          </div>
+          <div class="proof-result"><span aria-hidden="true">✓</span> Issues made visible before delivery</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Demo safeguards">
+      <div class="container trust-items">
+        <span><b>01</b> No upload field</span>
+        <span><b>02</b> No data leaves this page</span>
+        <span><b>03</b> Results are demonstrative</span>
+      </div>
+    </section>
+
+    <section class="demo-section" id="interactive-demo">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Interactive walkthrough</div>
+            <h2>Choose a sample dataset</h2>
+          </div>
+          <p>Each example contains deliberately introduced quality problems. Nothing here was uploaded by a visitor.</p>
+        </div>
+
+        <div class="dataset-picker" role="radiogroup" aria-label="Synthetic dataset">
+          <button class="dataset-card is-active" type="button" role="radio" aria-checked="true" data-dataset="customers">
+            <span class="dataset-icon" aria-hidden="true">CC</span>
+            <span><strong>Customer contacts</strong><small>Duplicates, phones, email and dates</small></span>
+          </button>
+          <button class="dataset-card" type="button" role="radio" aria-checked="false" data-dataset="orders">
+            <span class="dataset-icon" aria-hidden="true">SO</span>
+            <span><strong>Sales orders</strong><small>Amounts, missing values and status labels</small></span>
+          </button>
+        </div>
+
+        <div class="demo-workspace">
+          <div class="workspace-toolbar">
+            <div>
+              <span class="workspace-label">Preview</span>
+              <strong id="dataset-title">Customer contacts</strong>
+            </div>
+            <button class="btn btn-primary run-demo" id="run-demo" type="button">
+              <span aria-hidden="true">✦</span> Run demo cleaning
+            </button>
+          </div>
+
+          <div class="view-tabs" role="tablist" aria-label="Data preview">
+            <button id="before-tab" role="tab" aria-selected="true" aria-controls="data-panel" data-view="before">Before cleaning <span id="before-count">6 rows</span></button>
+            <button id="after-tab" role="tab" aria-selected="false" aria-controls="data-panel" data-view="after" disabled>After cleaning <span id="after-count">5 rows</span></button>
+          </div>
+
+          <div class="table-frame" id="data-panel" role="tabpanel" aria-labelledby="before-tab" tabindex="0">
+            <table id="data-table">
+              <caption class="sr-only">Synthetic data before cleaning</caption>
+              <thead></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <p class="table-hint">Scroll horizontally to see all columns on smaller screens.</p>
+          <div class="processing-state" id="processing-state" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section" id="results" hidden>
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Demonstrative result</div>
+            <h2>Quality Summary</h2>
+          </div>
+          <p>The score describes source quality and visible review needs. It is not a guarantee that every value is correct.</p>
+        </div>
+
+        <div class="quality-grid">
+          <article class="overall-card">
+            <div class="score-ring" id="score-ring"><span id="overall-score">91</span><small>/100</small></div>
+            <div><span class="quality-label">Overall quality</span><strong id="quality-verdict">Ready for review</strong><p id="quality-summary">A clear improvement after consistent, auditable corrections.</p></div>
+          </article>
+          <div class="metric-cards" id="metric-cards"></div>
+        </div>
+
+        <div class="change-log-card">
+          <div class="change-log-header">
+            <div><span class="workspace-label">Audit trail</span><h3>Change Log</h3></div>
+            <span class="change-count" id="change-count">0 changes</span>
+          </div>
+          <div class="table-frame">
+            <table id="change-table">
+              <caption class="sr-only">Demonstrative data cleaning change log</caption>
+              <thead><tr><th>Row</th><th>Field</th><th>Before</th><th>After</th><th>Reason</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+        <div class="section-heading compact-heading">
+          <div><div class="eyebrow">What happens next</div><h2>From sample to clean delivery</h2></div>
+        </div>
+        <ol class="process-steps">
+          <li><span>1</span><div><strong>Share the scope</strong><p>Tell me the file type, approximate size and the problems you see. Do not attach confidential data yet.</p></div></li>
+          <li><span>2</span><div><strong>Agree on secure transfer</strong><p>I confirm the sample scope and an appropriate way to exchange up to 100 rows.</p></div></li>
+          <li><span>3</span><div><strong>Review the result</strong><p>You receive a clean sample with a quality summary and an auditable change log.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="demo-cta">
+      <div class="container demo-cta-inner">
+        <div><div class="eyebrow">Ready to test the fit?</div><h2>Start small. See the quality first.</h2><p>Request a free sample of up to 100 rows, or tell me about a larger data cleaning project.</p></div>
+        <div class="demo-cta-actions">
+          <a href="contact.html?service=free-sample" class="btn btn-primary">Request a free sample</a>
+          <a href="contact.html?service=quote" class="btn btn-light">Request a quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 PURCELALEX</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data-cleaner-demo.js"></script>
+  <script src="nav.js"></script>
+  <script src="logo-align.js"></script>
+</body>
+</html>

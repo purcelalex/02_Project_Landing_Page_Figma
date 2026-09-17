@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — PURCELALEX</title>
+<title>Contact — PURCELALEX</title>
 <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,7 +20,6 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="data-cleaner-demo.html">Data Cleaner Demo</a></li>
         <li><a href="https://formula.purcelalex.com/">Formula Generator</a></li>
-        <li><a href="https://dispatcher.purcelalex.com/">Dispatcher Tool</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -31,32 +30,37 @@
 
   <section class="page-hero">
     <div class="container">
-      <div class="eyebrow">Legal</div>
-      <h1>Privacy Policy</h1>
+      <div class="eyebrow">Contact</div>
+      <h1>Get in touch</h1>
+      <p>Have a website or web app to build or test, or data that needs cleaning? Send a message below and I'll get back to you within a day.</p>
     </div>
   </section>
 
-  <div class="prose">
-    <p class="updated">Last updated: August 2026</p>
+  <section class="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Send me a request</h2>
+        <p class="contact-sub">Send a message and I'll get back to you within a day.</p>
 
-    <h2>Information we collect</h2>
-    <p>When you submit the contact form on this site, I receive the name, email address, and message you enter. That's the only personal information this site collects — there are no account sign-ups, purchases, or other data entry points.</p>
-
-    <h2>How we use your information</h2>
-    <p>Your information is used only to respond to your inquiry. It is never sold, shared with third parties, or used for marketing without your explicit permission.</p>
-
-    <h2>Cookies</h2>
-    <p>This site does not use cookies or any similar tracking technology. Nothing is stored in your browser beyond what's needed to submit the contact form.</p>
-
-    <h2>Third-party services</h2>
-    <p>Contact form submissions are sent directly by email. This site does not use third-party analytics, advertising, or tracking services of any kind.</p>
-
-    <h2>Your rights</h2>
-    <p>You can ask me to delete any information you've submitted at any time by getting in touch directly. Contact form submissions are kept only as long as needed to respond to your inquiry.</p>
-
-    <h2>Contact us</h2>
-    <p>If you have any questions about this policy, get in touch via our <a href="contact.html" style="color:var(--teal);text-decoration:underline;">contact page</a>.</p>
-  </div>
+        <form id="contact-form" action="mailto:purcelalex@outlook.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="What would you like to talk about?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send message</button>
+          <div id="form-status" class="form-status" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
@@ -70,8 +74,10 @@
     </div>
   </footer>
 
-  <script src="logo-align.js"></script>
+  <script src="script.js"></script>
   <script src="nav.js"></script>
+
+  <script src="logo-align.js"></script>
 
 </body>
 </html>
