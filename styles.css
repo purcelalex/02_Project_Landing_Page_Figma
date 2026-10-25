@@ -246,6 +246,8 @@ nav.container{
   font-size:14px;
   color:var(--gray);
 }
+.card .card-example{margin-top:10px; font-size:14px; opacity:.9}
+.card .card-example a{color:var(--teal); font-weight:600; text-decoration:underline; text-underline-offset:3px}
 
 /* ===== TESTIMONIAL ===== */
 .testimonial{
